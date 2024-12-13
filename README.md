@@ -18,5 +18,6 @@ The output is a folder with a CSV file containing the target that the person is 
 ![data collection example](./docs/demo.gif)
 
 7. Visualize the recorded data, image by image by running `python visualization.py --base_path=./data/p00`.
+(畫出資聊夾內的可視化圖片)
 
 ![visualization example](./docs/3d_plot.gif)
