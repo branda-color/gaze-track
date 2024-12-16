@@ -1,7 +1,7 @@
 import cv2
 
 # 测试图片路径
-image_path = "../Flock_of_sheep.jpg"  # 确保这里替换为你实际的图片路径
+image_path = "./test.png"  # 确保这里替换为你实际的图片路径
 
 # 尝试加载图片
 image = cv2.imread(image_path)

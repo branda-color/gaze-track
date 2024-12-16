@@ -1,3 +1,10 @@
+# 測試功能是否正常
+1. 請先安裝所需套件(於requirements.txt) `pip install -r requirements.txt`
+2. 測試cv2是否可讀取圖片(並出現於螢幕上) `python test.py`
+3. 測試攝影機是否正常(並可於螢幕出現) `python test_cam.py`
+4. 測試是否可設置分辨率 `python cap.py`
+5. 測試設置+獲取幀率 `python cap2.py`
+
 # Collect Training and Calibration Data for Gaze Tracking
 
 This tool allows collecting gaze data necessary for personal calibration or training of eye-tracking models. It was developed as part of my master's thesis on [eye tracking with a monocular webcam](https://github.com/pperle/gaze-tracking).
