@@ -6,7 +6,7 @@
 5. 測試設置+獲取幀率 `python cap2.py`
 
 # (校正相機)
-1. 請先下載[棋盤校正]並列印(https://raw.githubusercontent.com/opencv/opencv/master/doc/pattern.png)  
+1. 請先下載[棋盤校正](https://raw.githubusercontent.com/opencv/opencv/master/doc/pattern.png)並列印 
 2. 校正程式 run `camera_calibration.py`  
 3. 輸出需校正靜態圖片 run `ffmpeg -i {影片名稱}.mp4 -f image2 frames/video_01-%07d.png`  
 4. 產生 run `camera_calibration.py`中的calibration function，請先調整chessboard_grid_size(9,6) 產生 `calibration_matrix.yaml`檔案
