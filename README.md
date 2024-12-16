@@ -1,9 +1,15 @@
-# 測試功能是否正常
+# (前置作業)測試功能是否正常
 1. 請先安裝所需套件(於requirements.txt) `pip install -r requirements.txt`
 2. 測試cv2是否可讀取圖片(並出現於螢幕上) `python test.py`
 3. 測試攝影機是否正常(並可於螢幕出現) `python test_cam.py`
 4. 測試是否可設置分辨率 `python cap.py`
 5. 測試設置+獲取幀率 `python cap2.py`
+
+# (校正相機)
+1. 請先下載[棋盤校正]並列印(https://raw.githubusercontent.com/opencv/opencv/master/doc/pattern.png)  
+2. 校正程式 run `camera_calibration.py`  
+3. 輸出需校正靜態圖片 run `ffmpeg -i {影片名稱}.mp4 -f image2 frames/video_01-%07d.png`  
+4. 產生 run `camera_calibration.py`中的calibration function，請先調整chessboard_grid_size(9,6) 產生 `calibration_matrix.yaml`檔案
 
 # Collect Training and Calibration Data for Gaze Tracking
 

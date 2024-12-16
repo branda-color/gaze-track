@@ -26,7 +26,7 @@ def record_video(width: int, height: int, fps: int) -> None:
         source.show(frame, only_print=idx % 5 != 0)
 
 
-def calibration(image_path, every_nth: int = 1, debug: bool = False, chessboard_grid_size=(7, 7)):
+def calibration(image_path, every_nth: int = 1, debug: bool = False, chessboard_grid_size=(9, 6)):
     """
     Perform camera calibration on the previously collected images.
     Creates `calibration_matrix.yaml` with the camera intrinsic matrix and the distortion coefficients.
