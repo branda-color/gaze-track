@@ -2,6 +2,8 @@ import pathlib
 from argparse import ArgumentParser
 from collections import defaultdict
 
+import backports.zoneinfo
+
 import cv2
 import pandas as pd
 
@@ -44,7 +46,7 @@ def main(base_path: str, monitor_mm=None, monitor_pixels=None):
 
 if __name__ == '__main__':
     parser = ArgumentParser()
-    parser.add_argument("--base_path", type=str, default='./data/p00')
+    parser.add_argument("--base_path", type=str, default='./data/p15/day02')
     parser.add_argument("--monitor_mm", type=str, default=None)
     parser.add_argument("--monitor_pixels", type=str, default=None)
     args = parser.parse_args()

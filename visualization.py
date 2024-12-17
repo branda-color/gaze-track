@@ -617,7 +617,7 @@ def fix_qt_cv_mismatch():
 
 if __name__ == '__main__':
     parser = ArgumentParser()
-    parser.add_argument("--base_path", type=str, default='./data/p00')
+    parser.add_argument("--base_path", type=str, default='./data/p15')
     args = parser.parse_args()
 
     main(args.base_path)

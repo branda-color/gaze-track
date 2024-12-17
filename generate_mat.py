@@ -56,7 +56,7 @@ def generate_calibration_files(image_path, chessboard_grid_size, screen_size, ou
 # 示例執行
 screen_size = {"width_pixel": 1280, "height_pixel": 720}
 generate_calibration_files(
-    image_path="./calibration_images",
+    image_path="./frames",
     chessboard_grid_size=(9, 6),
     screen_size=screen_size,
     output_path="./output_mat"
